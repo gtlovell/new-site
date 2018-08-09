@@ -1,0 +1,22 @@
+{
+  "name": "new-site",
+  "version": "1.0.0",
+  "description": "New website for Garrett Lovell",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtlovell/new-site.git"
+  },
+  "author": "Garrett Lovell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gtlovell/new-site/issues"
+  },
+  "homepage": "https://github.com/gtlovell/new-site#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
