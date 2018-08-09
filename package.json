@@ -6,10 +6,6 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gtlovell/new-site.git"
-  },
   "author": "Garrett Lovell",
   "license": "ISC",
   "bugs": {
