@@ -657,86 +657,92 @@ header nav li {
 }
 
 // Skill Colors
+i {
+  .html5 {
+    color: rgb(255, 123, 0);
+    opacity: 1;
+  }
+  .css3 {
+    color: rgb(53, 132, 252);
+    opacity: 1;
+  }
+  .sass {
+    color: rgb(250, 98, 255);
+    opacity: 1;
+  }
+  .less {
+    color: rgb(51, 56, 126);
+    opacity: 1;
+  }
+  .js {
+    color: rgb(255, 230, 0);
+    opacity: 1;
+  }
+  .react {
+    color: rgb(0, 211, 226);
+    opacity: 1;
+  }
+  .node {
+    color: rgb(99, 143, 90);
+    opacity: 1;
+  }
+  .wordpress {
+    color: rgb(80, 115, 155);
+    opacity: 1;
+  }
+  .gulp {
+    color: rgb(207, 68, 68);
+    opacity: 1;
+  }
+  .git {
+    color: rgb(255, 60, 0);
+    opacity: 1;
+  }
+  .vuejs {
+    color: rgb(0, 199, 116);
+    opacity: 1;
+  }
+  .docker {
+    color: rgb(13, 183, 237);
+    opacity: 1;
+  }
+}
+img {
+  .shopify-logo {
+    height: 60px;
+    width: 64px;
+    opacity: 1;
+  }
 
-i.html5 {
-  color: rgb(255, 123, 0);
-  opacity: 1;
-}
-i.css3 {
-  color: rgb(53, 132, 252);
-  opacity: 1;
-}
-i.sass {
-  color: rgb(250, 98, 255);
-  opacity: 1;
-}
-i.less {
-  color: rgb(51, 56, 126);
-  opacity: 1;
-}
-i.js {
-  color: rgb(255, 230, 0);
-  opacity: 1;
-}
-i.react {
-  color: rgb(0, 211, 226);
-  opacity: 1;
-}
-i.node {
-  color: rgb(99, 143, 90);
-  opacity: 1;
-}
-i.wordpress {
-  color: rgb(80, 115, 155);
-  opacity: 1;
-}
-i.gulp {
-  color: rgb(207, 68, 68);
-  opacity: 1;
-}
-i.git {
-  color: rgb(255, 60, 0);
-  opacity: 1;
-}
-i.vuejs {
-  color: rgb(0, 199, 116);
-  opacity: 1;
-}
+  .redux-logo {
+    height: 60px;
+    width: 64px;
+    opacity: 1;
+  }
 
-img.shopify-logo {
-  height: 60px;
-  width: 64px;
-  opacity: 1;
-}
+  .mongo-logo {
+    height: 60px;
+    width: 64px;
+    opacity: 1;
+  }
 
-img.redux-logo {
-  height: 60px;
-  width: 64px;
-  opacity: 1;
-}
+  .graphql-logo {
+    height: 70px;
+    width: 70px;
+    opacity: 1;
+  }
 
-img.mongo-logo {
-  height: 60px;
-  width: 64px;
-  opacity: 1;
-}
+  .gatsby-logo {
+    height: 60px;
+    width: 60px;
+    opacity: 1;
+  }
 
-img.graphql-logo {
-  height: 70px;
-  width: 70px;
-  opacity: 1;
-}
-
-img.gatsby-logo {
-  height: 60px;
-  width: 60px;
-  opacity: 1;
-}
-
-img.electron-logo {
-  height: 70px;
-  width: 70px;
-  opacity: 1;
+  .electron-logo {
+    height: 70px;
+    width: 70px;
+    opacity: 1;
+  }
 }
 
 #graphql h4 {
@@ -762,17 +768,17 @@ img.electron-logo {
 .about {
   background: $color-grey-dark-1;
   color: $color-white;
-}
 
-.about hr {
-  background-color: $color-white;
-}
+  hr {
+    background-color: $color-white;
+  }
 
-.about .quote {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 40px 0 25px;
+  .quote {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 40px 0 25px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -795,31 +801,31 @@ footer {
   background-color: $color-grey-dark-1;
   color: $color-white;
   padding: 20px 0;
-}
 
-footer ul {
-  display: flex;
-}
+  ul {
+    display: flex;
+  }
 
-footer ul li {
-  margin-left: 16px;
-}
+  ul li {
+    margin-left: 16px;
+  }
 
-footer p {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: $color-grey;
-  align-self: center;
-}
+  p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $color-grey;
+    align-self: center;
+  }
 
-footer p a {
-  border-bottom: 1px solid $color-white;
-}
+  p a {
+    border-bottom: 1px solid $color-white;
+  }
 
-footer p a:hover {
-  color: $color-white;
-  border-bottom: 1px solid $color-white;
-  opacity: 1;
+  p a:hover {
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+    opacity: 1;
+  }
 }
 
 #an-link {
@@ -842,10 +848,10 @@ footer p a:hover {
   footer {
     padding: 30px 20px;
     flex-direction: column-reverse;
-  }
 
-  footer p {
-    margin-top: 30px;
+    p {
+      margin-top: 30px;
+    }
   }
 
   #copy {

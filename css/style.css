@@ -103,9 +103,9 @@ section {
   padding: 100px 80px;
 }
 
-section:not(.hero):nth-child(even) {
+/* section:not(.hero):nth-child(even) {
   background-color: white;
-}
+} */
 
 .grid {
   width: 100%;
@@ -123,14 +123,15 @@ hr {
 }
 
 .hr-black {
-  width: 300px;
+  width: 400px;
   height: 1px;
-  background-color: black;
+  background-color: rgb(89, 99, 238);
   border: 0;
   margin-bottom: 50px;
 }
 
 section h3.title {
+  color: #fff;
   text-transform: capitalize;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.75em;
@@ -138,7 +139,21 @@ section h3.title {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 7px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(73, 73, 73);
+}
+
+.blue-title {
+  color: #192a56;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75em;
+  line-height: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -268,7 +283,7 @@ header nav li {
   font-weight: 600;
   letter-spacing: 7px;
   text-transform: uppercase;
-  color: black;
+  color: #273c75;
   margin-bottom: 20px;
 }
 
@@ -425,153 +440,6 @@ header nav li {
   .hero a.btn {
     padding: 15px 40px;
   }
-}
-
-/* Hero Button Styles */
-.portfolio-experiment,
-.scene {
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-display: flex;
-  -webkit-flex-wrap: wrap;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  justify-content: center;
-  /* margin-top: 100px; */
-  -webkit-justify-content: center;
-  -webkit-align-items: flex-end;
-}
-
-.portfolio-experiment a {
-  color: black;
-  padding: 0.7em calc(0.7em * 1.2);
-  display: inline-block;
-  border: 3px solid transparent;
-  position: relative;
-  margin-bottom: 175px;
-  font-size: 1.5em;
-  cursor: pointer;
-  letter-spacing: 0.07em;
-}
-
-.portfolio-experiment a .text {
-  font-family: 'Arapey', serif;
-  font-weight: 400;
-  font-size: 1.5em;
-  opacity: 1;
-  /* text-transform: uppercase; */
-  transform: translate3d(0, 0.7em, 0);
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-}
-
-.portfolio-experiment a:after {
-  position: absolute;
-  content: '';
-  bottom: -3px;
-  left: calc(0.7em * 1.2);
-  right: calc(0.7em * 1.2);
-  height: 3px;
-  background: #30d8c2;
-  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
-    right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
-    left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
-  transform-origin: left;
-}
-
-.portfolio-experiment .line {
-  position: absolute;
-  background: #30d8c2;
-}
-
-.portfolio-experiment .line.-right,
-.portfolio-experiment .line.-left {
-  width: 3px;
-  bottom: -3px;
-  top: -3px;
-  transform: scale3d(1, 0, 1);
-}
-
-.portfolio-experiment .line.-top,
-.portfolio-experiment .line.-bottom {
-  height: 3px;
-  left: -3px;
-  right: -3px;
-  transform: scale3d(0, 1, 1);
-}
-
-.portfolio-experiment .line.-right {
-  right: -3px;
-  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
-  transform-origin: top;
-}
-
-.portfolio-experiment .line.-top {
-  top: -3px;
-  transition: transform 0.08s linear 0.43s;
-  transform-origin: left;
-}
-
-.portfolio-experiment .line.-left {
-  left: -3px;
-  transition: transform 0.08s linear 0.51s;
-  transform-origin: bottom;
-}
-
-.portfolio-experiment .line.-bottom {
-  bottom: -3px;
-  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
-  transform-origin: right;
-}
-
-.portfolio-experiment a:hover .text,
-.portfolio-experiment a:active .text {
-  transform: translate3d(0, 0, 0);
-  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-}
-
-.portfolio-experiment a:hover:after,
-.portfolio-experiment a:active:after {
-  transform: scale3d(0, 1, 1);
-  right: -3px;
-  left: -3px;
-  transform-origin: right;
-  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
-    right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
-}
-
-.portfolio-experiment a:hover .line,
-.portfolio-experiment a:active .line {
-  transform: scale3d(1, 1, 1);
-}
-
-.portfolio-experiment a:hover .line.-right,
-.portfolio-experiment a:active .line.-right {
-  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
-  transform-origin: bottom;
-}
-
-.portfolio-experiment a:hover .line.-top,
-.portfolio-experiment a:active .line.-top {
-  transition: transform 0.08s linear 0.4s;
-  transform-origin: right;
-}
-
-.portfolio-experiment a:hover .line.-left,
-.portfolio-experiment a:active .line.-left {
-  transition: transform 0.08s linear 0.48s;
-  transform-origin: top;
-}
-
-.portfolio-experiment a:hover .line.-bottom,
-.portfolio-experiment a:active .line.-bottom {
-  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
-  transform-origin: left;
 }
 
 .portfolio {
@@ -747,57 +615,74 @@ header nav li {
 }
 
 i.html5 {
-  color: #ff7b00;
+  color: rgb(227, 79, 38);
   opacity: 1;
 }
 
 i.css3 {
-  color: #3584fc;
+  color: rgb(53, 132, 252);
   opacity: 1;
 }
 
 i.sass {
-  color: #fa62ff;
-  opacity: 1;
-}
-
-i.less {
-  color: #33387e;
+  color: rgb(204, 102, 153);
   opacity: 1;
 }
 
 i.js {
-  color: #ffe600;
+  color: rgb(247, 223, 30);
   opacity: 1;
 }
 
 i.react {
-  color: #00d3e2;
+  color: rgb(0, 216, 255);
   opacity: 1;
 }
 
 i.node {
-  color: #638f5a;
+  color: rgb(68, 136, 62);
   opacity: 1;
 }
 
 i.wordpress {
-  color: #50739b;
+  color: rgb(33, 117, 155);
   opacity: 1;
 }
 
 i.gulp {
-  color: #cf4444;
+  color: rgb(207, 70, 71);
   opacity: 1;
 }
 
 i.git {
-  color: #ff3c00;
+  color: rgb(241, 78, 50);
   opacity: 1;
 }
 
 i.vuejs {
-  color: #00c774;
+  color: rgb(66, 184, 131);
+  opacity: 1;
+}
+
+i.docker {
+  color: rgb(13, 183, 237);
+  opacity: 1;
+}
+
+i.aws {
+  color: rgb(255, 153, 0);
+  opacity: 1;
+}
+
+img.python-logo {
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+}
+
+img.tensorflow-logo {
+  height: 60px;
+  width: 60px;
   opacity: 1;
 }
 
@@ -859,7 +744,7 @@ img.webpack-logo {
 }
 
 #about {
-  background: #333333;
+  background: rgb(3, 12, 35);
   color: white;
 }
 
@@ -888,8 +773,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #333333;
-  color: white;
+  background-color: rgb(3, 12, 35);
+  color: rgb(255, 255, 255);
   padding: 20px 0;
 }
 
@@ -904,7 +789,9 @@ footer ul li {
 footer p {
   text-transform: uppercase;
   font-size: 14px;
-  color: #858585;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: rgb(133, 133, 133);
   align-self: center;
 }
 
@@ -913,19 +800,19 @@ footer p a {
 }
 
 footer p a:hover {
-  color: white;
-  border-bottom: 1px solid white;
+  color: rgb(22, 9, 61);
+  border-bottom: 1px solid rgb(22, 9, 61);
   opacity: 1;
 }
 
 #an-link {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 
 .fab,
 .fas {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 0.6;
 }
 
@@ -947,7 +834,8 @@ footer p a:hover {
   }
 }
 
-.github {
+section.github {
+  background: #192a56;
 }
 
 #root .container {
@@ -959,7 +847,6 @@ footer p a:hover {
 .card {
   width: 18rem;
   margin: 5px;
-
   display: flex;
 }
 
@@ -977,17 +864,14 @@ footer p a:hover {
   align-self: flex-end;
 }
 
-/* #card-btn {
-  margin-top: 10px;
-} */
-
 #logo-grid {
   padding-bottom: 0px;
 }
 
 #repo-card {
-  background-color: #fff;
-  color: #333;
+  /* background-color: #fff; */
+  background-color: rgb(39, 60, 117);
+  color: rgb(255, 255, 255);
   max-width: 700px;
   font-weight: 300;
   line-height: 2;
@@ -995,7 +879,7 @@ footer p a:hover {
   margin-bottom: 30px;
   text-align: left;
   border: none;
-  /* box-shadow: 0 0 20px 0 rgb(216, 216, 216); */
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
@@ -1004,7 +888,7 @@ footer p a:hover {
   text-transform: uppercase;
   letter-spacing: 7px;
   padding-bottom: 3px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgb(89, 99, 238);
 }
 
 .card-text {
@@ -1012,27 +896,20 @@ footer p a:hover {
   font-size: 18px;
 }
 
-/* section h3.title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-} */
-
 .repo-button a {
-  background-color: rgb(48, 216, 194);
-  color: #333;
+  background-color: rgb(97, 82, 143);
+  color: #ffffff;
   display: inline-block;
   border-radius: 5px;
   padding: 5px 10px;
   margin-right: auto;
   opacity: 1;
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 
 .repo-button a:hover {
-  background-color: rgb(35, 142, 127);
-  color: #fff;
+  background-color: rgb(42, 26, 88);
+  color: rgb(255, 255, 255);
 }
 
 #about > p {
@@ -1040,16 +917,3 @@ footer p a:hover {
   font-size: 18px;
   font-style: italic;
 }
-
-/* #tagline {
-  position: absolute;
-  display: inline-block;
-  top: 5;
-  left: 10;
-  transform: rotate(-90deg);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  padding-bottom: 3px;
-} */
