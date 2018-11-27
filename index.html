@@ -33,7 +33,7 @@
     <header>
       <a href="#"> <h2>Garrett Lovell</h2> </a>
       <nav class="cl-effect-6">
-        <a href="#work">Work</a> <a href="#about">About</a>
+        <a href="#skills">Work</a> <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -43,16 +43,6 @@
         <div class="line-1"><h1>I like awesome stuff.</h1></div>
         <div class="line-2"><h1>You like awesome stuff.</h1></div>
         <div class="line-3"><h1>Let's make awesome stuff together.</h1></div>
-
-        <!--
-          <div class="portfolio-experiment btn button-hero">
-            <a>
-              <span class="text">My Work</span> <span class="line -right"></span>
-              <span class="line -top"></span> <span class="line -left"></span>
-              <span class="line -bottom"></span>
-            </a>
-          </div>
-        -->
 
         <svg class="arrows">
           <path class="a1" d="M0 0 L30 32 L60 0"></path>
@@ -64,7 +54,7 @@
 
     <!-- Logo Grid Section -->
     <section class="logos">
-      <h3 class="blue-title">Skills That Pay the Bills</h3>
+      <h3 id="skills" class="blue-title">Skills That Pay the Bills</h3>
       <hr class="hr-black" />
 
       <ul class="grid">
@@ -84,10 +74,12 @@
           <i class="fab fa-js fa-4x js"></i>
           <h4>JavaScript</h4>
         </li>
-        <li>
-          <img src="img/typescript-logo.png" class="fab typescript-logo" />
-          <h4>TypeScript</h4>
-        </li>
+        <!--
+          <li>
+            <img src="img/typescript-logo.png" class="fab typescript-logo" />
+            <h4>TypeScript</h4>
+          </li>
+        -->
         <li>
           <i class="fab fa-react fa-4x react"></i>
           <h4>React</h4>
@@ -120,16 +112,18 @@
           <img src="img/apollo-logo.png" class="fab apollo-logo" />
           <h4>Apollo</h4>
         </li>
+
+        <li>
+          <i class="fab fa-docker fa-4x docker"></i>
+          <h4>Docker</h4>
+        </li>
         <!--
-          <li>
-            <i class="fab fa-docker fa-4x docker"></i>
-            <h4>Docker</h4>
-          </li>
           <li>
             <i class="fab fa-aws fa-4x aws"></i>
             <h4>Amazon Web Services</h4>
           </li>
         -->
+
         <!--
           <li>
             <img src="img/tensorflow-logo.png" class="fab tensorflow-logo" />
@@ -152,14 +146,10 @@
           <i class="fab fa-wordpress fa-4x wordpress"></i>
           <h4>Wordpress</h4>
         </li>
-
-        <!--
-          <li>
-            <i class="fab fa-gulp fa-4x gulp"></i>
-            <h4>Gulp</h4>
-          </li>
-        -->
-
+        <li>
+          <i class="fab fa-gulp fa-4x gulp"></i>
+          <h4>Gulp</h4>
+        </li>
         <li>
           <i class="fab fa-git fa-4x git"></i>
           <h4>Git</h4>
@@ -169,7 +159,7 @@
 
     <!-- GitHub Section -->
     <section class="github">
-      <h3 class="title">Projects I'm Working On</h3>
+      <h3 id="github" class="title">Projects I'm Working On</h3>
       <hr class="hr-black" />
       <div id="root"></div>
     </section>
