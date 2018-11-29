@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Arapey', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1em;
 }
 
@@ -154,9 +154,10 @@ section h3.title {
 }
 
 section p {
+  font-family: 'Lato', sans-serif;
   max-width: 700px;
   font-weight: 300;
-  line-height: 2;
+  line-height: 1.5;
   padding: 0 20px;
   margin-bottom: 30px;
   text-align: center;
@@ -434,9 +435,61 @@ header nav li {
 }
 
 .portfolio {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
   font-weight: 300;
+}
+
+.portfolio-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-grid li {
+  display: inline-block;
+  width: 268px;
+  margin: 50px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.portfolio-item {
+  margin: 50px;
+  padding: 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.portfolio-item img {
+  width: 268px;
+  opacity: 1;
+}
+
+.portfolio-item h4 {
+  padding: 20px 0;
+}
+
+.portfolio-link {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #192a56;
+  opacity: 1;
+}
+
+.portfolio-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.portfolio-link h4:hover {
+  text-decoration: none;
 }
 
 .grid {
@@ -753,7 +806,7 @@ img.typescript-logo {
 }
 
 .about hr {
-  background-color: white;
+  background-color: rgb(89, 99, 238);
 }
 
 .about .quote {
@@ -896,7 +949,7 @@ section.github {
 }
 
 .card-text {
-  font-family: 'Arapey', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
 }
 
@@ -917,7 +970,8 @@ section.github {
 }
 
 #about > p {
-  font-family: 'Arapey', serif;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
   font-size: 18px;
-  font-style: italic;
+  letter-spacing: 1px;
 }
