@@ -703,18 +703,8 @@ i.git {
   opacity: 1;
 }
 
-i.vuejs {
-  color: rgb(66, 184, 131);
-  opacity: 1;
-}
-
 i.docker {
   color: rgb(13, 183, 237);
-  opacity: 1;
-}
-
-i.aws {
-  color: rgb(255, 153, 0);
   opacity: 1;
 }
 
@@ -767,19 +757,25 @@ img.gatsby-logo {
   opacity: 1;
 }
 
-img.electron-logo {
-  height: 70px;
-  width: 70px;
-  opacity: 1;
-}
-
 img.webpack-logo {
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   opacity: 1;
 }
 
 img.typescript-logo {
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+}
+
+img.photoshop-logo {
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+}
+
+img.illustrator-logo {
   height: 60px;
   width: 60px;
   opacity: 1;
@@ -791,7 +787,7 @@ img.typescript-logo {
 }
 
 #webpack h4 {
-  margin-top: 15px;
+  margin-top: 0 !important;
 }
 
 @media (max-width: 800px) {
