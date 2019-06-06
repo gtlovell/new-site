@@ -781,9 +781,19 @@ img.illustrator-logo {
   opacity: 1;
 }
 
+img.blender-logo {
+  height: 50px;
+  width: 60px;
+  opacity: 1;
+}
+
 #graphql h4,
 #electron h4 {
   margin-top: 10px;
+}
+
+#blender h4 {
+  margin-top: 30px;
 }
 
 #webpack h4 {
