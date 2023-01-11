@@ -18,6 +18,6 @@
   "homepage": "https://github.com/gtlovell/new-site#readme",
   "devDependencies": {
     "node-sass": "^4.9.3",
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.2"
   }
 }
